@@ -17,6 +17,7 @@ body {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
+  justify-content: space-between;
   margin-top: auto;
   background-color: lightskyblue;
 }
@@ -34,27 +35,7 @@ body {
   justify-content: flex-end;
 }
 
-.info {
-  display: flex;
-  flex-flow: row wrap;
-  margin-left: auto;
-  align-content: space-between;
-  justify-content: flex-end;
-}
-
-.visit {
-  margin: 1em;
-}
-
-.exhibits {
-  margin: 1em;
-}
-
-.events {
-  margin: 1em;
-}
-
-.about {
+.visit, .exhibits, .events, .about {
   margin: 1em;
 }
 
@@ -79,6 +60,11 @@ video {
   grid-row: 2;
 }
 
-h1 {
+h1, p {
   text-align: center;
+}
+
+.contact, .address, .hours {
+  margin: 1em;
+  margin-right: auto;
 }
