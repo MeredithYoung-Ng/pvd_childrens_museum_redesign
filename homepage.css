@@ -1,0 +1,41 @@
+body {
+  background-color: white;
+}
+
+.navbar {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+.logo {
+  justify-content: flex-start;
+}
+
+.links {
+  display: flex;
+  flex-flow: row wrap;
+  margin-left: auto;
+  align-content: space-between;
+  justify-content: flex-end;
+}
+
+.visit {
+  margin: 1em;
+}
+
+.exhibits {
+  margin: 1em;
+}
+
+.events {
+  margin: 1em;
+}
+
+.about {
+  margin: 1em;
+}
+
+.menu {
+  margin: 1em;
+}
