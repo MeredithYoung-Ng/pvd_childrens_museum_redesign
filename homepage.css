@@ -43,3 +43,20 @@ body {
 .menu {
   margin: 1em;
 }
+
+.main {
+  display: grid;
+}
+
+.vid {
+  grid-row: 1;
+}
+
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+.exhibits {
+  grid-row: 2;
+}
