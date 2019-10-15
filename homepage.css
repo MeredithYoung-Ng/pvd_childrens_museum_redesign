@@ -5,6 +5,7 @@ body {
   min-height: 100vh;
   margin: 0 0 0 0;
   text-align: center;
+  font-family: Helvetica;
 }
 
 .navbar {
@@ -48,11 +49,41 @@ body {
   margin-left: auto;
   align-content: space-between;
   justify-content: flex-end;
+  text-decoration: none;
 }
+
+a {
+     text-decoration: none;
+    }
 
 .visit, .exhibits, .events, .about {
   margin: 1em;
+  text-decoration: none;
 }
+
+.about a:hover{
+  font-weight: bold;
+  text-decoration:none;
+  border-bottom:3px solid #4842A6;
+  }
+
+.visit a:hover{
+  font-weight:bold;
+  text-decoration:none;
+  border-bottom:3px solid #4842A6;
+  }
+
+.exhibits a:hover{
+  font-weight:bold;
+  text-decoration:none;
+  border-bottom:3px solid #4842A6;
+  }
+.events a:hover{
+  font-weight:bold;
+  text-decoration:none;
+  border-bottom:3px solid #4842A6;
+  }
+
 
 .menu {
   margin: 1em;
