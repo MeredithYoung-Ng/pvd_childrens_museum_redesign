@@ -26,7 +26,7 @@ body {
   align-items: center;
   justify-content: space-between;
   margin-top: auto;
-  background-color: lightskyblue;
+  background-color: #4842A6;
 }
 
 .footerGrid {
@@ -166,4 +166,6 @@ img {
 .contact, .address, .hours {
   margin: 1em;
   margin-right: auto;
+  color: white;
+  text-align: left;
 }
