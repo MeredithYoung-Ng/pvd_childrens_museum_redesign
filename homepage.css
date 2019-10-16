@@ -185,4 +185,6 @@ img {
 .contact, .address, .hours {
   margin: 1em;
   margin-right: auto;
+  color: white;
+  text-align: left;
 }
