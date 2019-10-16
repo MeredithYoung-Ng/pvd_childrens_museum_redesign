@@ -57,6 +57,8 @@ h1 {
 
 .footerIcons {
   grid-row: 2;
+  padding:0;
+  margin:0;
 }
 
 .links {
@@ -182,9 +184,33 @@ img {
   padding: 10px;
 }
 
-.contact, .address, .hours {
+.news, .contact, .address, .hours {
   margin: 1em;
   margin-right: auto;
   color: white;
   text-align: left;
+}
+
+.news{
+  padding-left: 40px;
+}
+
+#subscribe{
+  background-color: #70C341;
+  border: none;
+  font-family: calibre;
+  padding: 5px;
+  margin: 0px 0;
+}
+#box{
+  background-color: #4842A6;
+  font-family: calibre;
+  margin: 0px;
+  border-width:thin;
+  padding: 5px;
+  margin: 0;
+}
+
+::placeholder {
+  color: white;
 }
