@@ -302,6 +302,7 @@ strong {
   .exhibitTitle {
     grid-row: 1;
     grid-column: 1;
+    margin: auto auto auto auto;
   }
 
   img {
