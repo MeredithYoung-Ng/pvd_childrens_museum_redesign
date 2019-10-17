@@ -60,6 +60,9 @@ h1 {
   padding:0;
   margin:0;
 }
+.footerIcons a{
+  color: white;
+}
 
 .links {
   display: flex;
@@ -70,7 +73,19 @@ h1 {
   text-decoration: none;
 }
 
-a {
+.about a{
+  text-decoration: none;
+  color: white;
+}
+.visit a{
+  text-decoration: none;
+  color: white;
+}
+.exhibits a{
+  text-decoration: none;
+  color: white;
+}
+.events a{
   text-decoration: none;
   color: white;
 }
@@ -142,28 +157,88 @@ img {
   height: auto;
 }
 
+.exhibit1, .exhibit2, .exhibit3 a{
+  font-size: 20px;
+  text-align: left;
+  font-family: calibre-bold;
+}
+
+.under_1, .under_2, .under_3 {
+  font-family: calibre;
+  font-size: 15px;
+  text-align: left;
+}
+
 .exhibit1 {
   grid-row: 2;
   grid-column: 1 / 2;
-  background-color: red;
+  background-color: white;
+  color: black;
 }
 
 .exhibit2 {
   grid-row: 2;
   grid-column: 2 / 3;
-  background-color: orange;
+  background-color: white;
 }
 
 .exhibit3 {
   grid-row: 2;
   grid-column: 3 / 4;
-  background-color: yellow;
+  background-color: white;
+  text-align: left;
+}
+
+.exhibit1 a{
+  text-decoration: none;
+  color: black;
+}
+.exhibit1 a:hover{
+  font-weight: bold;
+  text-decoration:none;
+  border-bottom:3px solid #70C341;
+}
+.exhibit2 a{
+  text-decoration: none;
+  color: black;
+}
+.exhibit2 a:hover{
+  font-weight: bold;
+  text-decoration:none;
+  border-bottom:3px solid #70C341;
+}
+.exhibit3 a{
+  text-decoration: none;
+  color: black;
+}
+.exhibit3 a:hover{
+  font-weight: bold;
+  text-decoration:none;
+  border-bottom:3px solid #70C341;
 }
 
 .exhibitbutton {
   grid-row: 3;
   grid-column: 1 / 4;
-  padding: 10px;
+  padding: 20px;
+  border: none;
+}
+
+#learn:hover{
+  background-color: #70C341;
+  border: none;
+}
+
+#learn{
+  background-color: #272727;
+  border: none;
+  color: white;
+  font-family: calibre;
+  font-size: 16px;
+  padding: 10px 25px;
+  margin: 10px 0px;
+  border-radius: 8px;
+  border: none;
 }
 
 .news, .contact, .address, .hours {
@@ -171,6 +246,11 @@ img {
   margin-right: auto;
   color: white;
   text-align: left;
+  font-family: calibre;
+}
+
+.hours a:{
+  color: #70C341;
 }
 
 .news{
@@ -181,8 +261,10 @@ img {
   background-color: #70C341;
   border: none;
   font-family: calibre;
-  padding: 5px;
-  margin: 0px 0;
+  padding: 6px;
+  margin: 10px 0;
+  border-radius: 2px;
+  font-size: 14px;+-
 }
 #box{
   background-color: #4842A6;
@@ -191,6 +273,8 @@ img {
   border-width:thin;
   padding: 5px;
   margin: 0;
+  border-radius: 2px;
+  font-size: 14px;
 }
 
 ::placeholder {
@@ -243,5 +327,8 @@ strong {
     grid-row: 5;
     grid-column: 1;
     padding: 10px;
+  }
+  #green{
+    color: #70C341;
   }
 }
