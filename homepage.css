@@ -233,6 +233,22 @@ img {
   border: none;
 }
 
+.play {
+  grid-row: 4;
+  grid-column: 1 / 4;
+  display: grid;
+}
+
+.activeplay {
+  grid-row: 1;
+  grid-column: 1 / 2;
+}
+
+.playImage {
+  grid-row: 1;
+  grid-column: 2 / 3;
+}
+
 #learn:hover{
   background-color: #70C341;
   border: none;
@@ -275,6 +291,7 @@ img {
   border-radius: 2px;
   font-size: 14px;+-
 }
+
 #box{
   background-color: #4842A6;
   font-family: calibre;
