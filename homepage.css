@@ -128,8 +128,12 @@ h1 {
   display: grid;
 }
 
-.vid {
+#vid {
+  width: 100%;
   grid-row: 1;
+  height: 500px;
+  overflow: hidden;
+  border-radius: 4px;
 }
 
 video {
@@ -143,7 +147,7 @@ video {
   grid-template-rows: auto 1fr auto;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 10px 10px;
-  padding: 100px;
+  padding: 40px 100px 40px 100px;
 }
 
 .exhibitTitle {
