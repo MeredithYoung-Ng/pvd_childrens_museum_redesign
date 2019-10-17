@@ -330,7 +330,20 @@ img {
   grid-column: 5;
 }
 
-#subscribe{
+.news, .contact, .address, .hours, p {
+  margin: 0 0 0 0;
+}
+
+.news input {
+  color: white;
+}
+
+#footerHeadings {
+  color: #70C341;
+  margin: 1em 0 0 0;
+}
+
+#subscribe {
   background-color: #70C341;
   border: none;
   font-family: calibre;
