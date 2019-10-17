@@ -1,3 +1,4 @@
+/* Import fonts used for webpage */
 @font-face {
   font-family: calibre;
   src: url(fonts/calibre.ttf);
@@ -8,6 +9,7 @@
   src: url(fonts/Calibre-Bold.otf);
 }
 
+/* Body: Navbar, Exhibits & Active Play, and Footer */
 body {
   background-color: white;
   display: flex;
@@ -46,21 +48,25 @@ h1 {
   text-decoration: none;
 }
 
+/* Header link stylization */
 .about a{
   text-decoration: none;
   color: white;
   font-family: calibre;
 }
+
 .visit a{
   text-decoration: none;
   color: white;
   font-family: calibre;
 }
+
 .exhibits a{
   text-decoration: none;
   color: white;
   font-family: calibre;
 }
+
 .events a{
   text-decoration: none;
   color: white;
@@ -72,6 +78,7 @@ h1 {
   text-decoration: none;
 }
 
+/* Header link hover underline */
 .about a:hover{
   font-weight: bold;
   text-decoration:none;
@@ -100,10 +107,12 @@ h1 {
   margin: 1em;
 }
 
+/* Use grid for placing video, exhibits, and active play components */
 .main {
   display: grid;
 }
 
+/* Video placement: crop to screen (preserve exhibit line) */
 #vid {
   width: 100%;
   grid-row: 1;
@@ -117,6 +126,7 @@ video {
   height: auto;
 }
 
+/* Display exhibits within grid style */
 .exhibitsHomepage {
   grid-row: 2;
   display: grid;
@@ -171,28 +181,34 @@ img {
   text-align: left;
 }
 
+/* Hover to click to exhibit webpage link (stylized) */
 .exhibit1 a{
   text-decoration: none;
   color: black;
 }
+
 .exhibit1 a:hover{
   font-weight: bold;
   text-decoration:none;
   border-bottom:3px solid #70C341;
 }
+
 .exhibit2 a{
   text-decoration: none;
   color: black;
 }
+
 .exhibit2 a:hover{
   font-weight: bold;
   text-decoration:none;
   border-bottom:3px solid #70C341;
 }
+
 .exhibit3 a{
   text-decoration: none;
   color: black;
 }
+
 .exhibit3 a:hover{
   font-weight: bold;
   text-decoration:none;
@@ -206,6 +222,7 @@ img {
   border: none;
 }
 
+/* Use grid to place active play image and placement */
 .play {
   grid-row: 4;
   grid-column: 1 / 4;
@@ -213,6 +230,7 @@ img {
   grid-template-columns: 1fr 1fr;
 }
 
+/* Responsive text for active play */
 .activeplay {
   grid-row: 1;
   grid-column: 1 / 2;
@@ -229,6 +247,7 @@ img {
   margin: 1em;
 }
 
+/* Preserve image proportions */
 .playImage {
   grid-row: 1;
   grid-column: 2 / 3;
@@ -244,6 +263,7 @@ img {
   min-height: 100%;
 }
 
+/* Button interaction for active play */
 #learnPlay:hover{
   background-color: #4842A6;
   border: none;
@@ -278,6 +298,7 @@ img {
   border: none;
 }
 
+/* Use grid functionality for footer component placement */
 .footer {
   display: grid;
   margin-top: auto;
@@ -302,6 +323,7 @@ img {
   color: white;
 }
 
+/* Align top of information components */
 .news, .contact, .address, .hours {
   color: white;
   text-align: left;
@@ -376,11 +398,14 @@ strong {
   font-family: calibre-bold;
 }
 
+/* Tablet size responsiveness */
 @media (max-width: 800px)  {
+  /* Preserve logo size on header */
   #imgLogo {
     max-width: 100%;
   }
 
+  /* Place exhibits in column mode, centered on screen */
   .exhibitsHomepage {
     grid-row: 2;
     display: grid;
@@ -396,6 +421,7 @@ strong {
     margin: auto auto auto auto;
   }
 
+  /* Resize exhibit images */
   img {
     max-width: 50%;
     height: auto;
@@ -442,14 +468,17 @@ strong {
     color: #70C341;
   }
 
+  /* Resize video to smaller screen */
   #vid {
     height: auto;
   }
 
+  /* Resize text for active play */
   .activeplay {
     font-size: 28px;
   }
 
+  /* Make footer a 3 x 2 grid (due to smaller screen size) */
   .footer {
     grid-template-rows: auto 1fr 1fr;
     grid-template-columns: 1fr 1fr;
@@ -502,7 +531,9 @@ strong {
   }
 }
 
+/* Responsiveness for smaller tablet screen size */
 @media (max-width: 600px)  {
+  /* Resize exhibits padding (border) for smaller screen */
   .exhibitsHomepage {
     grid-row: 2;
     display: grid;
@@ -552,16 +583,20 @@ strong {
     height: auto;
   }
 
+  /* Responsive text size for smaller screen */
   .activeplay {
     font-size: 24px;
   }
 
+  /* Align footer content for smaller screen */
   .news, .contact, .address, .hours {
     padding-left: 80px;
   }
 }
 
+/* Responsiveness for mobile phones */
 @media (max-width: 541px)  {
+  /* Header: display items below logo */
   .navbar {
     display: grid;
     align-items: center;
@@ -583,6 +618,7 @@ strong {
     text-decoration: none;
   }
 
+  /* Decrease padding for smaller screen size */
   .exhibitsHomepage {
     grid-row: 2;
     display: grid;
@@ -635,6 +671,7 @@ strong {
     height: auto;
   }
 
+  /* Resize active play */
   .play {
     grid-row: 6;
     grid-column: 1;
@@ -668,12 +705,15 @@ strong {
     object-fit: cover;
   }
 
+  /* Adjust footer placement to smaller screen width */
   .news, .contact, .address, .hours {
     padding-left: 5vw;
   }
 }
 
+/* Responsiveness for smallest screens */
 @media (max-width: 326px)  {
+  /* Rearrange footer items into a column */
   .footer {
     grid-template-rows: auto auto auto auto auto;
     grid-template-columns: auto;
