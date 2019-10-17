@@ -157,7 +157,7 @@ img {
   height: auto;
 }
 
-.exhibit1, .exhibit2, .exhibit3 a{
+.exhibit3, .exhibit1, .exhibit2, a{
   font-size: 20px;
   text-align: left;
   font-family: calibre-bold;
@@ -186,7 +186,6 @@ img {
   grid-row: 2;
   grid-column: 3 / 4;
   background-color: white;
-  text-align: left;
 }
 
 .exhibit1 a{
