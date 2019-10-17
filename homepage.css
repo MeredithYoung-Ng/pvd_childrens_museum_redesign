@@ -175,6 +175,7 @@ img {
   font-family: calibre;
   font-size: 15px;
   text-align: left;
+  padding-top: 5px;
 }
 
 .exhibit1 {
@@ -276,6 +277,9 @@ img {
   border-radius: 2px;
   font-size: 14px;+-
 }
+#subscribe:hover{
+  background-color: #272727;
+}
 #box{
   background-color: #4842A6;
   font-family: calibre;
@@ -354,6 +358,9 @@ strong {
   #green{
     color: #70C341;
   }
+  #vid {
+    height: auto;
+  }
 }
 
 @media (max-width: 600px)  {
@@ -400,6 +407,9 @@ strong {
     grid-row: 5;
     grid-column: 1;
     padding: 10px;
+  }
+  #vid {
+    height: auto;
   }
 }
 
@@ -471,5 +481,8 @@ strong {
     grid-row: 5;
     grid-column: 1;
     padding: 10px;
+  }
+  #vid {
+    height: auto;
   }
 }
