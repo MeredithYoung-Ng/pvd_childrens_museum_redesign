@@ -238,16 +238,55 @@ img {
   grid-row: 4;
   grid-column: 1 / 4;
   display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .activeplay {
   grid-row: 1;
   grid-column: 1 / 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: calibre-bold;
+  font-size: 32px;
+  color: white;
+  background-color: #70C341;
+}
+
+.activeplay p {
+  margin: 1em;
 }
 
 .playImage {
   grid-row: 1;
   grid-column: 2 / 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+#imgplay {
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+#learnPlay:hover{
+  background-color: #4842A6;
+  border: none;
+}
+
+#learnPlay{
+  background-color: #272727;
+  border: none;
+  color: white;
+  font-family: calibre;
+  font-size: 16px;
+  padding: 10px 25px;
+  margin: 0 auto 0 auto;
+  border-radius: 8px;
+  border: none;
 }
 
 #learn:hover{
@@ -326,7 +365,7 @@ strong {
     display: grid;
     grid-template-rows: auto 1fr 1fr 1fr auto;
     grid-template-columns: 1fr;
-    grid-gap: 10px 10px;
+    grid-gap: 10px 0px;
     padding: 50px;
   }
 
@@ -373,11 +412,21 @@ strong {
     grid-column: 1;
     padding: 10px;
   }
+
+  .play {
+    grid-row: 6;
+  }
+
   #green{
     color: #70C341;
   }
+
   #vid {
     height: auto;
+  }
+
+  .activeplay {
+    font-size: 28px;
   }
 }
 
@@ -426,12 +475,17 @@ strong {
     grid-column: 1;
     padding: 10px;
   }
+
   #vid {
     height: auto;
   }
+
+  .activeplay {
+    font-size: 24px;
+  }
 }
 
-@media (max-width: 500px)  {
+@media (max-width: 541px)  {
   .navbar {
     display: grid;
     align-items: center;
@@ -456,7 +510,7 @@ strong {
   .exhibitsHomepage {
     grid-row: 2;
     display: grid;
-    grid-template-rows: auto 1fr 1fr 1fr auto;
+    grid-template-rows: auto 1fr 1fr 1fr auto auto;
     grid-template-columns: 1fr;
     grid-gap: 10px 10px;
     padding: 30px;
@@ -500,7 +554,41 @@ strong {
     grid-column: 1;
     padding: 10px;
   }
+
   #vid {
     height: auto;
+  }
+
+  .play {
+    grid-row: 6;
+    grid-column: 1;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .activeplay {
+    grid-row: 2;
+    grid-column: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: calibre-bold;
+    font-size: 24px;
+    color: white;
+    background-color: #70C341;
+  }
+
+  .playImage {
+    grid-row: 1;
+    grid-column: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  #imgplay {
+    object-fit: cover;
   }
 }
