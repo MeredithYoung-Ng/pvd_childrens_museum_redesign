@@ -195,12 +195,13 @@ img {
 
 ::placeholder {
   color: white;
+}
 
 strong {
   font-family: calibre-bold;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px)  {
   .exhibitsHomepage {
     grid-row: 2;
     display: grid;
