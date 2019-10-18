@@ -398,6 +398,19 @@ strong {
   font-family: calibre-bold;
 }
 
+/* 4K screen size responsiveness */
+@media (min-width: 1500px) {
+  .main img {
+    max-width: none;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .exhibitsHomepage {
+    grid-column-gap: 1vw;
+  }
+}
+
 /* Tablet size responsiveness */
 @media (max-width: 800px)  {
   /* Preserve logo size on header */
