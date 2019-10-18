@@ -731,6 +731,7 @@ strong {
   .news, .contact, .address, .hours {
     padding-left: 0px;
     grid-column: 1;
+    text-align: center;
   }
 
   .news {
