@@ -1,3 +1,3 @@
 # pvd_childrens_museum_redesign
 
-See <readme.pdf> for details.
+See <writeup.pdf> for details.
